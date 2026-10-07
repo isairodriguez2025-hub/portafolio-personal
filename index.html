@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio profesional de desarrollo web y programación.">
+  <title>Portafolio Profesional</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Encabezado y Navegación principal -->
+  <header class="header">
+    <div class="logo">
+      <a href="#inicio">MiPortafolio</a>
+    </div>
+    
+    <!-- Botón Menú Hamburguesa para móviles -->
+    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú de navegación">
+      ☰
+    </button>
+
+    <nav class="nav" id="nav-menu">
+      <ul class="nav-list">
+        <li><a href="#inicio" class="nav-link">Inicio</a></li>
+        <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+        <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+        <li><a href="#contacto" class="nav-link">Contacto</a></li>
+      </ul>
+      <!-- Botón de Modo Oscuro -->
+      <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Seccion 1: Inicio / Hero -->
+    <section id="inicio" class="hero-section">
+      <div class="hero-content">
+        <h1>Hola, soy <span class="highlight">Tu Nombre</span></h1>
+        <p>Desarrollador Web / Programador enfocando en crear soluciones accesibles y de alto rendimiento.</p>
+        <a href="#proyectos" class="btn btn-primary">Ver mis proyectos</a>
+      </div>
+    </section>
+
+    <!-- Seccion 2: Sobre mí y Habilidades -->
+    <section id="sobre-mi" class="about-section">
+      <h2>Sobre mí</h2>
+      <p>Estudiante y desarrollador apasionado por el código limpio, la arquitectura web y la creación de herramientas eficientes.</p>
+      
+      <h3>Habilidades Técnicas</h3>
+      <ul class="skills-list">
+        <li>HTML5 & CSS3 / SASS</li>
+        <li>JavaScript (ES6+)</li>
+        <li>Git & GitHub</li>
+        <li>SQL & Bases de Datos</li>
+      </ul>
+    </section>
+
+    <!-- Seccion 3: Proyectos -->
+    <section id="proyectos" class="projects-section">
+      <h2>Proyectos Destacados</h2>
+      <div class="projects-grid">
+        
+        <article class="project-card">
+          <h3>Proyecto 1</h3>
+          <p>Descripción breve del proyecto y del problema que resuelve.</p>
+          <p><strong>Tecnologías:</strong> HTML, CSS, JavaScript</p>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">Ver Código</a>
+            <a href="#" target="_blank" rel="noopener">Demo en vivo</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3>Proyecto 2</h3>
+          <p>Descripción breve del segundo proyecto.</p>
+          <p><strong>Tecnologías:</strong> Java, SQL</p>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">Ver Código</a>
+            <a href="#" target="_blank" rel="noopener">Demo en vivo</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Seccion 4: Contacto -->
+    <section id="contacto" class="contact-section">
+      <h2>Contacto</h2>
+      <form id="contact-form" class="contact-form">
+        <div class="form-group">
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Mensaje:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-submit">Enviar mensaje</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="footer">
+    <p>&copy; 2026 Tu Nombre. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
