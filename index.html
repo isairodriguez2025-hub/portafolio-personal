@@ -1,118 +1,84 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portafolio profesional de desarrollo web y programación.">
-  <title>Portafolio Profesional</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Isai Rodríguez Villaseca</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Encabezado y Navegación -->
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">Isai Rodríguez</h1>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- Encabezado y Navegación principal -->
-  <header class="header">
-    <div class="logo">
-      <a href="#inicio">MiPortafolio</a>
-    </div>
-    
-    <!-- Botón Menú Hamburguesa para móviles -->
-    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú de navegación">
-      ☰
-    </button>
-
-    <nav class="nav" id="nav-menu">
-      <ul class="nav-list">
-        <li><a href="#inicio" class="nav-link">Inicio</a></li>
-        <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
-        <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
-        <li><a href="#contacto" class="nav-link">Contacto</a></li>
-      </ul>
-      <!-- Botón de Modo Oscuro -->
-      <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">🌙</button>
-    </nav>
-  </header>
-
-  <main>
-    <!-- Seccion 1: Inicio / Hero -->
+    <!-- Sección Principal (Hero) -->
     <section id="inicio" class="hero-section">
-      <div class="hero-content">
-        <h1>Hola, soy <span class="highlight">Rodriguez Villaseca Isai</span></h1>
-        <p>Desarrollador Web / Programador enfocando en crear soluciones accesibles y de alto rendimiento.</p>
-        <a href="#proyectos" class="btn btn-primary">Ver mis proyectos</a>
-      </div>
+        <div class="hero-content">
+            <div class="profile-container">
+                <!-- Asegúrate de colocar tu imagen con el nombre correcto -->
+                <img src="perfil.jpg" alt="Foto de Isai Rodríguez Villaseca" class="profile-img">
+            </div>
+            <h2>Hola, soy <span class="highlight">Isai Rodríguez Villaseca</span></h2>
+            <p class="subtitle">Estudiante de Desarrollo de Software & Técnico Informático | IPN - CECyT 3</p>
+            <a href="#proyectos" class="btn-primary">Ver mis proyectos</a>
+        </div>
     </section>
 
-    <!-- Seccion 2: Sobre mí y Habilidades -->
+    <!-- Sección Sobre Mí -->
     <section id="sobre-mi" class="about-section">
-      <h2>Sobre mí</h2>
-      <p>Estudiante y desarrollador apasionado por el código limpio, la arquitectura web y la creación de herramientas eficientes.</p>
-      
-      <h3>Habilidades Técnicas</h3>
-      <ul class="skills-list">
-        <li>HTML5 & CSS3 / SASS</li>
-        <li>JavaScript (ES6+)</li>
-        <li>Git & GitHub</li>
-        <li>SQL & Bases de Datos</li>
-      </ul>
+        <h2>Sobre mí</h2>
+        <p>
+            Soy estudiante del Instituto Politécnico Nacional (CECyT 3 "Estanislao Ramírez Ruiz"), apasionado por la programación, la arquitectura de software y el modelado 3D. Me enfoco en desarrollar soluciones digitales eficientes, código limpio y prototipos funcionales.
+        </p>
+
+        <h3>Habilidades Técnicas</h3>
+        <ul class="skills-list">
+            <li><strong>Lenguajes & Desarrollo:</strong> Java, HTML5, CSS3, JavaScript (ES6+)</li>
+            <li><strong>Bases de Datos & Sistemas:</strong> SQL, Linux / Ubuntu, Control de Versiones (Git & GitHub)</li>
+            <li><strong>Diseño & Multimedia:</strong> Blender (Modelado & Animación 3D), AutoCAD</li>
+        </ul>
     </section>
 
-    <!-- Seccion 3: Proyectos -->
+    <!-- Sección Proyectos -->
     <section id="proyectos" class="projects-section">
-      <h2>Proyectos Destacados</h2>
-      <div class="projects-grid">
-        
-        <article class="project-card">
-          <h3>Proyecto 1</h3>
-          <p>Descripción breve del proyecto y del problema que resuelve.</p>
-          <p><strong>Tecnologías:</strong> HTML, CSS, JavaScript</p>
-          <div class="project-links">
-            <a href="#" target="_blank" rel="noopener">Ver Código</a>
-            <a href="#" target="_blank" rel="noopener">Demo en vivo</a>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <h3>Proyecto 2</h3>
-          <p>Descripción breve del segundo proyecto.</p>
-          <p><strong>Tecnologías:</strong> Java, SQL</p>
-          <div class="project-links">
-            <a href="#" target="_blank" rel="noopener">Ver Código</a>
-            <a href="#" target="_blank" rel="noopener">Demo en vivo</a>
-          </div>
-        </article>
-
-      </div>
+        <h2>Mis Proyectos</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Sistemas y Programación Modular</h3>
+                <p>Desarrollo de aplicaciones orientadas a objetos y lógica modular utilizando Java y NetBeans.</p>
+            </div>
+            <div class="project-card">
+                <h3>Modelado y Animación 3D</h3>
+                <p>Creación de recursos multimediales, animación de personajes y renderizado con Blender.</p>
+            </div>
+            <div class="project-card">
+                <h3>Portafolio Web Personal</h3>
+                <p>Diseño web accesible, responsive y adaptativo desplegado en GitHub Pages.</p>
+            </div>
+        </div>
     </section>
 
-    <!-- Seccion 4: Contacto -->
+    <!-- Sección Contacto -->
     <section id="contacto" class="contact-section">
-      <h2>Contacto</h2>
-      <form id="contact-form" class="contact-form">
-        <div class="form-group">
-          <label for="name">Nombre:</label>
-          <input type="text" id="name" name="name" required>
-        </div>
-        
-        <div class="form-group">
-          <label for="email">Correo electrónico:</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-
-        <div class="form-group">
-          <label for="message">Mensaje:</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-        </div>
-
-        <button type="submit" class="btn btn-submit">Enviar mensaje</button>
-      </form>
+        <h2>Contacto</h2>
+        <p>¿Te interesa colaborar en un proyecto o conocer más sobre mi trabajo?</p>
+        <p>Puedes encontrarme en GitHub: <a href="https://github.com/isairodriguez2025-hub" target="_blank">github.com/isairodriguez2025-hub</a></p>
     </section>
-  </main>
 
-  <!-- Pie de página -->
-  <footer class="footer">
-    <p>&copy; 2026 Tu Nombre. Todos los derechos reservados.</p>
-  </footer>
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2026 Isai Rodríguez Villaseca. Todos los derechos reservados.</p>
+    </footer>
 
-  <script src="js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
