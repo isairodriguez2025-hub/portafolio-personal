@@ -10,7 +10,7 @@
     <!-- Encabezado y Navegación -->
     <header>
         <nav class="navbar">
-            <h1 class="logo">Isai Rodríguez</h1>
+            <div class="logo">Isai Rodríguez</div>
             <ul class="nav-links">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#sobre-mi">Sobre mí</a></li>
@@ -23,55 +23,75 @@
     <!-- Sección Principal (Hero) -->
     <section id="inicio" class="hero-section">
         <div class="hero-content">
-            <div class="profile-container">
-                <!-- Asegúrate de colocar tu imagen con el nombre correcto -->
-                <img src="perfil.jpg" alt="Foto de Isai Rodríguez Villaseca" class="profile-img">
+            <!-- Espacio reservado para tu fotografía (puedes agregar tu <img src="..." class="profile-img"> aquí) -->
+             <img src="img/foto escuela.jpg.jpeg" alt="">
+            <div class="profile-placeholder">
+                <span>Tu Foto Aquí</span>
             </div>
+            
             <h2>Hola, soy <span class="highlight">Isai Rodríguez Villaseca</span></h2>
             <p class="subtitle">Estudiante de Desarrollo de Software & Técnico Informático | IPN - CECyT 3</p>
-            <a href="#proyectos" class="btn-primary">Ver mis proyectos</a>
+            <div class="hero-buttons">
+                <a href="#proyectos" class="btn-primary">Ver mis proyectos</a>
+                <a href="#contacto" class="btn-secondary">Contáctame</a>
+            </div>
         </div>
     </section>
 
     <!-- Sección Sobre Mí -->
     <section id="sobre-mi" class="about-section">
-        <h2>Sobre mí</h2>
-        <p>
-            Soy estudiante del Instituto Politécnico Nacional (CECyT 3 "Estanislao Ramírez Ruiz"), apasionado por la programación, la arquitectura de software y el modelado 3D. Me enfoco en desarrollar soluciones digitales eficientes, código limpio y prototipos funcionales.
-        </p>
+        <div class="container">
+            <h2>Sobre mí</h2>
+            <p>
+                Soy estudiante del Instituto Politécnico Nacional (CECyT 3 "Estanislao Ramírez Ruiz"), apasionado por la programación, la arquitectura de software y el modelado 3D. Me enfoco en desarrollar soluciones digitales eficientes, código limpio y prototipos funcionales.
+            </p>
 
-        <h3>Habilidades Técnicas</h3>
-        <ul class="skills-list">
-            <li><strong>Lenguajes & Desarrollo:</strong> Java, HTML5, CSS3, JavaScript (ES6+)</li>
-            <li><strong>Bases de Datos & Sistemas:</strong> SQL, Linux / Ubuntu, Control de Versiones (Git & GitHub)</li>
-            <li><strong>Diseño & Multimedia:</strong> Blender (Modelado & Animación 3D), AutoCAD</li>
-        </ul>
+            <h3 class="skills-title">Habilidades Técnicas</h3>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Desarrollo & Lenguajes</h4>
+                    <p>Java, HTML5, CSS3, JavaScript (ES6+)</p>
+                </div>
+                <div class="skill-category">
+                    <h4>Sistemas & Datos</h4>
+                    <p>SQL, Linux / Ubuntu, Control de Versiones (Git & GitHub)</p>
+                </div>
+                <div class="skill-category">
+                    <h4>Diseño & Multimedia</h4>
+                    <p>Blender (Modelado y Animación 3D), AutoCAD</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Sección Proyectos -->
     <section id="proyectos" class="projects-section">
-        <h2>Mis Proyectos</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <h3>Sistemas y Programación Modular</h3>
-                <p>Desarrollo de aplicaciones orientadas a objetos y lógica modular utilizando Java y NetBeans.</p>
-            </div>
-            <div class="project-card">
-                <h3>Modelado y Animación 3D</h3>
-                <p>Creación de recursos multimediales, animación de personajes y renderizado con Blender.</p>
-            </div>
-            <div class="project-card">
-                <h3>Portafolio Web Personal</h3>
-                <p>Diseño web accesible, responsive y adaptativo desplegado en GitHub Pages.</p>
+        <div class="container">
+            <h2>Mis Proyectos</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Sistemas y Programación Modular</h3>
+                    <p>Desarrollo de aplicaciones orientadas a objetos y lógica modular utilizando Java y NetBeans.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Modelado y Animación 3D</h3>
+                    <p>Creación de recursos multimediales, animación de personajes y renderizado con Blender.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Portafolio Web Personal</h3>
+                    <p>Diseño web accesible, responsive y adaptativo desplegado en GitHub Pages.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Sección Contacto -->
     <section id="contacto" class="contact-section">
-        <h2>Contacto</h2>
-        <p>¿Te interesa colaborar en un proyecto o conocer más sobre mi trabajo?</p>
-        <p>Puedes encontrarme en GitHub: <a href="https://github.com/isairodriguez2025-hub" target="_blank">github.com/isairodriguez2025-hub</a></p>
+        <div class="container">
+            <h2>Contacto</h2>
+            <p>¿Te interesa colaborar en un proyecto o conocer más sobre mi trabajo?</p>
+            <p class="contact-link">GitHub: <a href="https://github.com/isairodriguez2025-hub" target="_blank">github.com/isairodriguez2025-hub</a></p>
+        </div>
     </section>
 
     <!-- Pie de página -->
